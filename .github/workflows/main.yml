@@ -1,0 +1,18 @@
+name: Main
+
+on:
+  push:
+    branches:
+      - main
+
+  # Enabled for testing purposes
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: francisfuzz/hello-world-rb@main
+        with:
+          who-to-greet: 'World'
