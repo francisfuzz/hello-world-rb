@@ -4,7 +4,7 @@ This action prints "Hello World" or "Hello" + the name of a person (or thing) to
 
 ## Inputs
 
-### `greeting-target`
+### `who-to-greet`
 
 **Required** The name of the person (or thing) to greet. Default `"World"`.
 
@@ -27,7 +27,7 @@ jobs:
     steps:
       - uses: francisfuzz/hello-world-rb@main
         with:
-          greeting_target: 'Heaven' # defaults to 'World'
+          who-to-greet: 'Heaven' # defaults to 'World'
 ```
 ## Attribution
 
