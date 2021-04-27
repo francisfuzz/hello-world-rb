@@ -2,11 +2,11 @@ name: 'Hello World Ruby'
 description: 'An action that simply displays Hello World using Ruby, unless otherwise specified'
 author: 'francisfuzz'
 inputs: 
-  greetingTarget:
+  greeting_target:
     description: 'What to greet'
     default: 'World'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.greetingTarget }}
+    - ${{ inputs.greeting_target }}
