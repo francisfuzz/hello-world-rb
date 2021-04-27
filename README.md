@@ -1,12 +1,20 @@
-# Container Action Template
+# francisfuzz/hello-world-rb
 
-This repository was generated from [`actions/container-action`](https://github.com/actions/container-action).
+This action prints "Hello World" or "Hello" + the name of a person (or thing) to greet to the log. It exists to showcase the minimum required for writing a "Hello World" Docker container action leveraging the `ruby:latest` image.
 
-It exists to showcase the minimum required for writing a "Hello World" Docker container action leveraging the `ruby:latest` image.
+## Inputs
 
-## Usage
+### `greeting-target`
 
-Create a new workflow file that triggers on the `workflow_dispatch` event for easy testing:
+**Required** The name of the person (or thing) to greet. Default `"World"`.
+
+## Outputs 
+
+None.
+
+## Example usage
+
+Create a new workflow file that triggers on the `workflow_dispatch` event:
 
 ```yaml
 name: CI
@@ -21,3 +29,10 @@ jobs:
         with:
           greeting_target: 'Heaven' # defaults to 'World'
 ```
+## Attribution
+
+This repository was generated from [`actions/container-action`](https://github.com/actions/container-action).
+
+## License
+
+MIT
