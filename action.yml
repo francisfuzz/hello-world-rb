@@ -4,7 +4,7 @@ author: 'francisfuzz'
 inputs: 
   greetingTarget:
     description: 'What to greet'
-    default: 'World (src: action.yml)'
+    default: 'World'
 runs:
   using: 'docker'
   image: 'Dockerfile'
