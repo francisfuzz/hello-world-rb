@@ -1,5 +1,5 @@
 # Container Action Template
 
-To get started, click the `Use this template` button on this repository [which will create a new repository based on this template](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/).
+This repository was generated from [`actions/container-action`](https://github.com/actions/container-action).
 
-For info on how to build your first Container action, see the [toolkit docs folder](https://github.com/actions/toolkit/blob/master/docs/container-action.md).
+It exists to showcase the minimum required for writing a "Hello World" Docker container action leveraging the `ruby:latest` image.
