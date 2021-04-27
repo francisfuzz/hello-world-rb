@@ -25,7 +25,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: francisfuzz/hello-world-rb@main
+      - uses: francisfuzz/hello-world-rb@v1
         with:
           who-to-greet: 'Heaven' # defaults to 'World'
 ```
